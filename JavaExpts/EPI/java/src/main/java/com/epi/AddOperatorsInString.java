@@ -11,11 +11,13 @@ public class AddOperatorsInString {
   public static boolean expressionSynthesis(List<Integer> digits, int target) {
     List<Character> operators = new ArrayList<>();
     List<Integer> operands = new ArrayList<>();
-    return directedExpressionSynthesis(digits, target, 0, 0, operands, operators);
+    return directedExpressionSynthesis(digits, target, 0, 0, operands,
+                                       operators);
   }
 
   private static boolean directedExpressionSynthesis(List<Integer> digits,
-                                                     int target, int currentTerm,
+                                                     int target,
+                                                     int currentTerm,
                                                      int offset,
                                                      List<Integer> operands,
                                                      List<Character> operators) {
@@ -76,7 +78,8 @@ public class AddOperatorsInString {
     return val;
   }
 
-  private static int evaluate(List<Integer> operands, List<Character> operators) {
+  private static int evaluate(List<Integer> operands,
+                              List<Character> operators) {
     Stack<Integer> intermediateOperands = new Stack<>();
     int operandIdx = 0;
     intermediateOperands.push(operands.get(operandIdx++));

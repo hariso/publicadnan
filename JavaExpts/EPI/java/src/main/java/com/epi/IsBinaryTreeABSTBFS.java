@@ -12,7 +12,8 @@ public class IsBinaryTreeABSTBFS {
     public BinaryTreeNode<Integer> treeNode;
     public Integer lowerBound, upperBound;
 
-    public QueueEntry(BinaryTreeNode<Integer> treeNode, Integer lowerBound, Integer upperBound) {
+    public QueueEntry(BinaryTreeNode<Integer> treeNode, Integer lowerBound,
+                      Integer upperBound) {
       this.treeNode = treeNode;
       this.lowerBound = lowerBound;
       this.upperBound = upperBound;
@@ -21,18 +22,22 @@ public class IsBinaryTreeABSTBFS {
 
   public static boolean isBinaryTreeBST(BinaryTreeNode<Integer> tree) {
     LinkedList<QueueEntry> BFSQueue = new LinkedList<>();
-    BFSQueue.addLast(new QueueEntry(tree, Integer.MIN_VALUE, Integer.MAX_VALUE));
+    BFSQueue
+        .addLast(new QueueEntry(tree, Integer.MIN_VALUE, Integer.MAX_VALUE));
 
     while (!BFSQueue.isEmpty()) {
       if (BFSQueue.getFirst().treeNode != null) {
-        if (BFSQueue.getFirst().treeNode.getData() < BFSQueue.getFirst().lowerBound ||
-            BFSQueue.getFirst().treeNode.getData() > BFSQueue.getFirst().upperBound) {
+        if (BFSQueue.getFirst().treeNode.getData() < BFSQueue
+            .getFirst().lowerBound ||
+            BFSQueue.getFirst().treeNode.getData() > BFSQueue
+                .getFirst().upperBound) {
           return false;
         }
 
         BFSQueue.addLast(new QueueEntry(BFSQueue.getFirst().treeNode.getLeft(),
                                         BFSQueue.getFirst().lowerBound,
-                                        BFSQueue.getFirst().treeNode.getData()));
+                                        BFSQueue.getFirst().treeNode
+                                            .getData()));
         BFSQueue.addLast(new QueueEntry(BFSQueue.getFirst().treeNode.getRight(),
                                         BFSQueue.getFirst().treeNode.getData(),
                                         BFSQueue.getFirst().upperBound));

@@ -14,7 +14,9 @@ public class AddingCredits {
 
     private int offset = 0;
     private Map<String, Integer> clientToCredit = new HashMap<>();
-    private NavigableMap<Integer, Set<String>> creditToClients = new TreeMap<>();
+    private NavigableMap<Integer, Set<String>>
+        creditToClients =
+        new TreeMap<>();
 
     public void insert(String clientID, int c) {
       remove(clientID);

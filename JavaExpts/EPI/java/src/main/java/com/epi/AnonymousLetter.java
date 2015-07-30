@@ -56,7 +56,8 @@ class AnonymousLetter {
     assert (isLetterConstructibleFromMagazine("123", "1123"));
     assert (isLetterConstructibleFromMagazine("123", "123"));
     assert (!isLetterConstructibleFromMagazine("12323", "123"));
-    assert (isLetterConstructibleFromMagazine("GATTACA", "A AD FS GA T ACA TTT"));
+    assert (isLetterConstructibleFromMagazine("GATTACA",
+                                              "A AD FS GA T ACA TTT"));
   }
 
   public static void main(String[] args) {

@@ -16,24 +16,29 @@ Checkstyle configuration that checks the sun coding conventions.
         <module name="JavadocMethod">
             <property name="severity" value="ignore"/>
             <property name="suppressLoadErrors" value="true"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="JavadocType">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="JavadocVariable">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="JavadocStyle">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="ConstantName"/>
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName">
-            <property name="format" value="^[a-z][a-zA-Z0-9_]*$|^[A-Z]$|^[A-Z]_$"/>
+            <property name="format"
+                      value="^[a-z][a-zA-Z0-9_]*$|^[A-Z]$|^[A-Z]_$"/>
         </module>
         <module name="MemberName"/>
         <module name="MethodName"/>
@@ -71,7 +76,8 @@ Checkstyle configuration that checks the sun coding conventions.
         <module name="RightCurly"/>
         <module name="AvoidInlineConditionals">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
@@ -80,7 +86,8 @@ Checkstyle configuration that checks the sun coding conventions.
         <module name="InnerAssignment"/>
         <module name="MagicNumber">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="MissingSwitchDefault"/>
         <module name="RedundantThrows">
@@ -90,25 +97,30 @@ Checkstyle configuration that checks the sun coding conventions.
         <module name="SimplifyBooleanReturn"/>
         <module name="DesignForExtension">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="FinalClass">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="HideUtilityClassConstructor">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="InterfaceIsType"/>
         <module name="VisibilityModifier">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="ArrayTypeStyle"/>
         <module name="FinalParameters">
             <property name="severity" value="ignore"/>
-            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+            <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                      value="inherit"/>
         </module>
         <module name="TodoComment"/>
         <module name="UpperEll"/>
@@ -118,7 +130,8 @@ Checkstyle configuration that checks the sun coding conventions.
     </module>
     <module name="JavadocPackage">
         <property name="severity" value="ignore"/>
-        <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+        <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
+                  value="inherit"/>
     </module>
     <module name="NewlineAtEndOfFile"/>
     <module name="Translation"/>

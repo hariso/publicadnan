@@ -116,7 +116,8 @@ public class PointsCoveringIntervals {
     intervals[5] = new Interval(6, 7);
     ans = findMinimumVisits(intervals);
     System.out.println(ans);
-    assert (ans.size() == 3 && ans.get(0) == 2 && ans.get(1) == 4 && ans.get(2) == 6);
+    assert (ans.size() == 3 && ans.get(0) == 2 && ans.get(1) == 4
+            && ans.get(2) == 6);
   }
 
   public static void main(String[] args) {

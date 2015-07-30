@@ -26,7 +26,8 @@ public class LowestCommonAncestorHash {
         node1 = node1.getParent();
       }
     }
-    throw new IllegalArgumentException("node0 and node1 are not in the same tree");
+    throw new IllegalArgumentException(
+        "node0 and node1 are not in the same tree");
   }
   // @exclude
 

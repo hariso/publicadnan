@@ -19,11 +19,13 @@ public class BiggestProductNMinus1Math {
         if (leastNegativeIdx == -1 || A.get(leastNegativeIdx) < A.get(i)) {
           leastNegativeIdx = i;
         }
-        if (greatestNegativeIdx == -1 || A.get(i) < A.get(greatestNegativeIdx)) {
+        if (greatestNegativeIdx == -1 || A.get(i) < A
+            .get(greatestNegativeIdx)) {
           greatestNegativeIdx = i;
         }
       } else if (A.get(i) >= 0) {
-        if (leastNonnegativeIdx == -1 || A.get(i) < A.get(leastNonnegativeIdx)) {
+        if (leastNonnegativeIdx == -1 || A.get(i) < A
+            .get(leastNonnegativeIdx)) {
           leastNonnegativeIdx = i;
         }
       }

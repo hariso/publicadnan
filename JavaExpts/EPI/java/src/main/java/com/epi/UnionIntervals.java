@@ -41,7 +41,8 @@ class Interval implements Comparable<Interval> {
       return true;
     }
     Interval that = (Interval) obj;
-    return this.left.val == that.left.val && this.left.isClosed == that.left.isClosed;
+    return this.left.val == that.left.val
+           && this.left.isClosed == that.left.isClosed;
   }
 
   @Override

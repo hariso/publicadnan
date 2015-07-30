@@ -16,7 +16,8 @@ public class PickingUpCoins {
     return pickUpCoinsHelper(C, 0, C.size() - 1, T);
   }
 
-  private static int pickUpCoinsHelper(List<Integer> C, int a, int b, int[][] T) {
+  private static int pickUpCoinsHelper(List<Integer> C, int a, int b,
+                                       int[][] T) {
     if (a > b) {
       return 0; // Base condition.
     }

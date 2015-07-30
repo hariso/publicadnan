@@ -46,7 +46,8 @@ public class MultiplyShiftAdd {
         int x = r.nextInt(65535), y = r.nextInt(65535);
         long prod = multiply(x, y);
         assert (prod == (long) x * y);
-        System.out.println("PASS: x = " + x + ", y = " + y + "; prod = " + prod);
+        System.out
+            .println("PASS: x = " + x + ", y = " + y + "; prod = " + prod);
       }
     }
   }

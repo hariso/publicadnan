@@ -55,7 +55,8 @@ public class MergeSortedArrays {
         // Add the next entry of smallestArray into minHeap.
         minHeap.add(new ArrayEntry(smallestArray.get(smallestArrayHead),
                                    minHeap.peek().arrayId));
-        heads.set(minHeap.peek().arrayId, heads.get(minHeap.peek().arrayId) + 1);
+        heads
+            .set(minHeap.peek().arrayId, heads.get(minHeap.peek().arrayId) + 1);
       }
       minHeap.remove();
     }

@@ -18,7 +18,9 @@ public class OnlineSampling {
     for (int i = 0; i < k; ++i) {
       // Generate random int in [i, n - 1].
       int randIdx = i + randIdxGen.nextInt(n - i);
-      Integer ptr1 = changedElements.get(randIdx), ptr2 = changedElements.get(i);
+      Integer ptr1 = changedElements.get(randIdx),
+          ptr2 =
+              changedElements.get(i);
       if (ptr1 == null && ptr2 == null) {
         changedElements.put(randIdx, i);
         changedElements.put(i, randIdx);

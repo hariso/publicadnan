@@ -7,7 +7,8 @@ public class BSTLowestCommonAncestor {
   // @include
   // Input nodes are not null and the key at s is less than or equal to that at b.
   public static BSTNode<Integer> findLCA(BSTNode<Integer> tree,
-                                         BSTNode<Integer> s, BSTNode<Integer> b) {
+                                         BSTNode<Integer> s,
+                                         BSTNode<Integer> b) {
     BSTNode<Integer> p = tree;
     while (p.getData() < s.getData() || p.getData() > b.getData()) {
       // Keep searching since p is outside of [s, b].

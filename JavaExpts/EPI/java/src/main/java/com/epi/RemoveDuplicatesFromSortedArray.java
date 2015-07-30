@@ -34,7 +34,8 @@ public class RemoveDuplicatesFromSortedArray {
   }
 
   private static void smallTest() {
-    assert (6 == deleteDuplicates(Arrays.asList(2, 3, 5, 5, 7, 11, 11, 11, 13)));
+    assert (6 == deleteDuplicates(
+        Arrays.asList(2, 3, 5, 5, 7, 11, 11, 11, 13)));
   }
 
   public static void main(String[] args) {

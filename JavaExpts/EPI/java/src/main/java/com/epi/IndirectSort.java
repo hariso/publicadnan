@@ -48,7 +48,8 @@ class IndirectSort {
   }
   // @exclude
 
-  public static <T extends Comparable<T>> boolean isSorted(Iterable<T> iterable) {
+  public static <T extends Comparable<T>> boolean isSorted(
+      Iterable<T> iterable) {
     Iterator<T> iter = iterable.iterator();
     if (!iter.hasNext()) {
       return true;

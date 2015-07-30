@@ -23,7 +23,9 @@ public class SortedListToBST {
     }
 
     int mid = start + ((end - start) / 2);
-    DoublyListNode<Integer> left = buildSortedDoublyLinkedListHelper(start, mid);
+    DoublyListNode<Integer>
+        left =
+        buildSortedDoublyLinkedListHelper(start, mid);
     // Previous function call sets head to the successor of the maximum node in
     // the tree rooted at left.
     DoublyListNode<Integer> curr = new DoublyListNode<>(head.data, null, null);

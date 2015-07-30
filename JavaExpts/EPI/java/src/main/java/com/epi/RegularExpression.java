@@ -33,7 +33,8 @@ public class RegularExpression {
       // Iterate through s, checking '*' condition, if '*' condition holds,
       // performs the remaining checks.
       for (int i = 0; i < s.length() &&
-                      (regex.charAt(0) == '.' || regex.charAt(0) == s.charAt(i));
+                      (regex.charAt(0) == '.' || regex.charAt(0) == s
+                          .charAt(i));
            ++i) {
         if (isMatchHere(regex.substring(2), s.substring(i + 1))) {
           return true;

@@ -18,8 +18,10 @@ public class SortKIncreasingDecreasingArray {
     for (int i = 1; i <= A.size(); ++i) {
       if (i == A.size() // A is ended. Adds the last subarray
           ||
-          (A.get(i - 1) < A.get(i) && subarrayType == SubarrayType.DECREASING) ||
-          (A.get(i - 1) >= A.get(i) && subarrayType == SubarrayType.INCREASING)) {
+          (A.get(i - 1) < A.get(i) && subarrayType == SubarrayType.DECREASING)
+          ||
+          (A.get(i - 1) >= A.get(i)
+           && subarrayType == SubarrayType.INCREASING)) {
         List<Integer> subList = A.subList(startIdx, i);
         if (subarrayType == SubarrayType.DECREASING) {
           Collections.reverse(subList);
@@ -38,7 +40,8 @@ public class SortKIncreasingDecreasingArray {
   private static enum SubarrayType {INCREASING, DECREASING}
   // @exclude
 
-  public static <T extends Comparable<T>> boolean isSorted(Iterable<T> iterable) {
+  public static <T extends Comparable<T>> boolean isSorted(
+      Iterable<T> iterable) {
     Iterator<T> iter = iterable.iterator();
     if (!iter.hasNext()) {
       return true;

@@ -44,8 +44,10 @@ public class LowestCommonAncestorNoParent {
       // Found both nodes in the right subtree.
       return rightResult;
     }
-    int numTargetNodes = leftResult.numTargetNodes + rightResult.numTargetNodes +
-                         (tree == node0 || tree == node1 ? 1 : 0);
+    int
+        numTargetNodes =
+        leftResult.numTargetNodes + rightResult.numTargetNodes +
+        (tree == node0 || tree == node1 ? 1 : 0);
     return new Status(numTargetNodes, numTargetNodes == 2 ? tree : null);
   }
   // @exclude

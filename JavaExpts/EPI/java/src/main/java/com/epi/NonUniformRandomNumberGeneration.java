@@ -18,7 +18,8 @@ public class NonUniformRandomNumberGeneration {
     // probabilities.
     for (double p : probabilities) {
       prefixSumOfProbabilities.add(
-          prefixSumOfProbabilities.get(prefixSumOfProbabilities.size() - 1) + p);
+          prefixSumOfProbabilities.get(prefixSumOfProbabilities.size() - 1)
+          + p);
     }
 
     Random uniform01 = new Random();

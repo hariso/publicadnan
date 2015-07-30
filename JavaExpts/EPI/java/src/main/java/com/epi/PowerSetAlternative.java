@@ -36,7 +36,8 @@ public class PowerSetAlternative {
   private static void simpleTest() {
     List<List<Integer>> goldenResult = Arrays.asList(
         Arrays.asList(0, 1, 2), Arrays.asList(0, 1), Arrays.asList(0, 2),
-        Arrays.asList(0), Arrays.asList(1, 2), Arrays.asList(1), Arrays.asList(2),
+        Arrays.asList(0), Arrays.asList(1, 2), Arrays.asList(1),
+        Arrays.asList(2),
         new ArrayList<Integer>());
     List<List<Integer>> result = generatePowerSet(Arrays.asList(0, 1, 2));
     assert (result.equals(goldenResult));

@@ -97,7 +97,8 @@ public class ViewFromAbove {
             prev =
                 new LineSegment(prevXAxis, endpoint.val(),
                                 activeLineSegments.lastEntry().getValue().color,
-                                activeLineSegments.lastEntry().getValue().height);
+                                activeLineSegments.lastEntry()
+                                    .getValue().height);
           }
         }
       }

@@ -21,7 +21,8 @@ public class ReconstructBinaryTreePreInOrders {
       nodeToInorderIdx.put(inorder[i], i);
     }
     return binaryTreeFromPreorderInorderHelper(preorder, 0, preorder.length, 0,
-                                               inorder.length, nodeToInorderIdx);
+                                               inorder.length,
+                                               nodeToInorderIdx);
   }
 
   // Builds the subtree with preorder[preorderStart : preorderEnd - 1] and

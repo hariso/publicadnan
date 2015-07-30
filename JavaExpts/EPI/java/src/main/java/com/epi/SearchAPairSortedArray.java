@@ -135,7 +135,8 @@ public class SearchAPairSortedArray {
       IndexPair ans = findPairSumK(A, k);
       if (ans.index1 != -1 && ans.index2 != -1) {
         assert (A.get(ans.index1) + A.get(ans.index2) == k);
-        System.out.println(A.get(ans.index1) + "+" + A.get(ans.index2) + "=" + k);
+        System.out
+            .println(A.get(ans.index1) + "+" + A.get(ans.index2) + "=" + k);
       } else {
         Collections.sort(A);
         int l = 0, r = A.size() - 1;

@@ -80,7 +80,8 @@ public class BinarySearchUnknownLength {
       System.out.println(n + " " + k);
       int idx = binarySearchUnknownLength(A, k);
       System.out.println(idx);
-      assert (idx != -1 && A.get(idx) == k || Collections.binarySearch(A, k) < 0);
+      assert (idx != -1 && A.get(idx) == k
+              || Collections.binarySearch(A, k) < 0);
     }
   }
 }

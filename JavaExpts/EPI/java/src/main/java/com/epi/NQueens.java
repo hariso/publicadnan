@@ -65,10 +65,12 @@ public class NQueens {
 
     result = nQueens(4);
     assert (2 == result.size());
-    assert (result.get(0).equals(Arrays.asList(1, 3, 0, 2)) || result.get(0).equals(
-        Arrays.asList(2, 0, 3, 1)));
-    assert (result.get(1).equals(Arrays.asList(1, 3, 0, 2)) || result.get(1).equals(
-        Arrays.asList(2, 0, 3, 1)));
+    assert (result.get(0).equals(Arrays.asList(1, 3, 0, 2)) || result.get(0)
+        .equals(
+            Arrays.asList(2, 0, 3, 1)));
+    assert (result.get(1).equals(Arrays.asList(1, 3, 0, 2)) || result.get(1)
+        .equals(
+            Arrays.asList(2, 0, 3, 1)));
     assert (!result.get(0).equals(result.get(1)));
   }
 

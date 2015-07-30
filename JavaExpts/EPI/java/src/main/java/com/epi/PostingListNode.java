@@ -5,7 +5,8 @@ public class PostingListNode {
   private int order;
   private PostingListNode next, jump;
 
-  public PostingListNode(int order, PostingListNode next, PostingListNode jump) {
+  public PostingListNode(int order, PostingListNode next,
+                         PostingListNode jump) {
     this.order = order;
     this.next = next;
     this.jump = jump;

@@ -33,8 +33,9 @@ class CheckingCycleAlternative {
 
     // should output "l1 does not have cycle."
     assert (hasCycle(l1) == null);
-    System.out.println("l1 " + (hasCycle(l1) != null ? "has" : "does not have") +
-                       " cycle.");
+    System.out
+        .println("l1 " + (hasCycle(l1) != null ? "has" : "does not have") +
+                 " cycle.");
 
     // make it a cycle
     l3.next = l2;
@@ -43,7 +44,8 @@ class CheckingCycleAlternative {
     assert (hasCycle(l1).data == 2);
     ListNode<Integer> temp = hasCycle(l1);
     if (temp != null) {
-      System.out.println("l1 has cycle, located at node has value " + temp.data);
+      System.out
+          .println("l1 has cycle, located at node has value " + temp.data);
     } else {
       System.out.println("l1 does not have cycle");
     }

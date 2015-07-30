@@ -22,7 +22,8 @@ public class Arbitrage {
     return bellmanFord(G, 0);
   }
 
-  private static boolean bellmanFord(List<? extends List<Double>> G, int source) {
+  private static boolean bellmanFord(List<? extends List<Double>> G,
+                                     int source) {
     double[] disToSource = new double[G.size()];
     Arrays.fill(disToSource, Double.MAX_VALUE);
     disToSource[source] = 0;

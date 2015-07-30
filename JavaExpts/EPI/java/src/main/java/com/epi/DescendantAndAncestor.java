@@ -44,7 +44,8 @@ public class DescendantAndAncestor {
   private static boolean searchTarget(BSTNode<Integer> from,
                                       BSTNode<Integer> target) {
     while (from != null && from != target) {
-      from = from.getData() > target.getData() ? from.getLeft() : from.getRight();
+      from =
+          from.getData() > target.getData() ? from.getLeft() : from.getRight();
     }
     return from == target;
   }
@@ -57,7 +58,9 @@ public class DescendantAndAncestor {
     root.getLeft().setRight(new BSTNode<>(4));
     assert (!pairIncludesAncestorAndDescendantOfM(root.getLeft(), root,
                                                   root.getLeft().getRight()));
-    assert (pairIncludesAncestorAndDescendantOfM(root, root.getLeft().getRight(), root.getLeft()));
+    assert (pairIncludesAncestorAndDescendantOfM(root,
+                                                 root.getLeft().getRight(),
+                                                 root.getLeft()));
 
     // Example of the first figure of BST chapter.
     root = new BSTNode<>(19);
@@ -76,7 +79,8 @@ public class DescendantAndAncestor {
     root.getRight().getLeft().getRight().setRight(new BSTNode<>(41));
     root.getRight().setRight(new BSTNode<>(47));
     root.getRight().getRight().setRight(new BSTNode<>(53));
-    assert (!pairIncludesAncestorAndDescendantOfM(root.getRight(), root.getLeft(),
+    assert (!pairIncludesAncestorAndDescendantOfM(root.getRight(),
+                                                  root.getLeft(),
                                                   root.getRight().getLeft()));
     assert (pairIncludesAncestorAndDescendantOfM(
         root, root.getRight().getLeft().getRight().getLeft().getRight(),
@@ -94,9 +98,11 @@ public class DescendantAndAncestor {
     root.setRight(new BSTNode<>(5));
     root.getRight().setLeft(new BSTNode<>(4));
     root.getRight().setRight(new BSTNode<>(6));
-    assert (pairIncludesAncestorAndDescendantOfM(root, root.getRight().getRight(),
+    assert (pairIncludesAncestorAndDescendantOfM(root,
+                                                 root.getRight().getRight(),
                                                  root.getRight()));
-    assert (pairIncludesAncestorAndDescendantOfM(root.getRight().getRight(), root,
+    assert (pairIncludesAncestorAndDescendantOfM(root.getRight().getRight(),
+                                                 root,
                                                  root.getRight()));
     assert (!pairIncludesAncestorAndDescendantOfM(root, root.getRight(),
                                                   root.getRight().getRight()));

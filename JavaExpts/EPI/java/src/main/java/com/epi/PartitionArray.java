@@ -59,7 +59,9 @@ class PartitionArray {
     }
 
     while (!ageToOffset.isEmpty()) {
-      Map.Entry<Integer, Integer> from = ageToOffset.entrySet().iterator().next();
+      Map.Entry<Integer, Integer>
+          from =
+          ageToOffset.entrySet().iterator().next();
       Integer toAge = people[from.getValue()].age;
       Integer toValue = ageToOffset.get(toAge);
       swap(people, from.getValue(), toValue);
@@ -100,9 +102,11 @@ class PartitionArray {
 
     groupByAge(people);
     if (people[0].age == 10) {
-      assert (people[1].age == 20 && people[2].age == 20 && people[3].age == 20);
+      assert (people[1].age == 20 && people[2].age == 20
+              && people[3].age == 20);
     } else {
-      assert (people[1].age == 20 && people[2].age == 20 && people[3].age == 10);
+      assert (people[1].age == 20 && people[2].age == 20
+              && people[3].age == 10);
     }
   }
 
@@ -124,7 +128,8 @@ class PartitionArray {
       }
       Person[] people = new Person[size];
       for (int i = 0; i < size; ++i) {
-        people[i] = new Person(rnd.nextInt(k), randomString(rnd.nextInt(10) + 1));
+        people[i] =
+            new Person(rnd.nextInt(k), randomString(rnd.nextInt(10) + 1));
       }
       Set<Integer> ageSet = new HashSet<>();
       for (Person p : people) {

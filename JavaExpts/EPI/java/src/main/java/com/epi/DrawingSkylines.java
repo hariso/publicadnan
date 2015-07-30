@@ -46,8 +46,10 @@ public class DrawingSkylines {
       } else if (rightSkyline.get(j).right < leftSkyline.get(i).left) {
         merged.add(rightSkyline.get(j++));
       } else if (leftSkyline.get(i).left <= rightSkyline.get(j).left) {
-        boolean advanceFirst = mergeIntersectSkylines(merged, leftSkyline.get(i),
-                                                      rightSkyline.get(j));
+        boolean
+            advanceFirst =
+            mergeIntersectSkylines(merged, leftSkyline.get(i),
+                                   rightSkyline.get(j));
         if (advanceFirst) {
           i++;
         } else {
@@ -55,8 +57,10 @@ public class DrawingSkylines {
         }
 
       } else { // leftSkyline.get(i).left > rightSkyline.get(j).left.
-        boolean advanceFirst = mergeIntersectSkylines(merged, rightSkyline.get(j),
-                                                      leftSkyline.get(i));
+        boolean
+            advanceFirst =
+            mergeIntersectSkylines(merged, rightSkyline.get(j),
+                                   leftSkyline.get(i));
         if (advanceFirst) {
           j++;
         } else {

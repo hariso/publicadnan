@@ -6,8 +6,9 @@ public class MergeTwoBSTs {
 
   private static BSTNode<Integer> head;
 
-  private static BSTNode<Integer> buildSortedDoublyLinkedList(BSTNode<Integer> L,
-                                                              int n) {
+  private static BSTNode<Integer> buildSortedDoublyLinkedList(
+      BSTNode<Integer> L,
+      int n) {
     head = L;
     return buildSortedDoublyLinkedListHelper(0, n);
   }

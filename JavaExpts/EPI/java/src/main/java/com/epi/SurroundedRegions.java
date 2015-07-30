@@ -53,7 +53,8 @@ public class SurroundedRegions {
       } else {
         for (int[] d : dir) {
           Coordinate next = new Coordinate(curr.x + d[0], curr.y + d[1]);
-          if (board.get(next.x).get(next.y) == 'W' && !visited[next.x][next.y]) {
+          if (board.get(next.x).get(next.y) == 'W'
+              && !visited[next.x][next.y]) {
             visited[next.x][next.y] = true;
             q.add(next);
           }

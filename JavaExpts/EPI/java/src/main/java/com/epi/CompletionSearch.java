@@ -13,7 +13,8 @@ public class CompletionSearch {
     double adjustedSalarySum = currentSalaries[0] * currentSalaries.length;
     for (int i = 0; i < currentSalaries.length; ++i) {
       unadjustedSalarySum += currentSalaries[i];
-      adjustedSalarySum = currentSalaries[i] * (currentSalaries.length - (i + 1));
+      adjustedSalarySum =
+          currentSalaries[i] * (currentSalaries.length - (i + 1));
       if (unadjustedSalarySum + adjustedSalarySum >= targetPayroll) {
         return (targetPayroll - unadjustedSalarySum + currentSalaries[i]) /
                (currentSalaries.length - i);

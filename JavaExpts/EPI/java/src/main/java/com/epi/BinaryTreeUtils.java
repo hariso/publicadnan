@@ -19,7 +19,8 @@ public class BinaryTreeUtils {
       int x = r.nextInt(l.size());
       boolean addLeft = r.nextBoolean();
       BinaryTreeNode<Integer> it = l.get(x);
-      if (addLeft && it.getLeft() == null || !addLeft && it.getRight() == null) {
+      if (addLeft && it.getLeft() == null
+          || !addLeft && it.getRight() == null) {
         it.setLeft(
             new BinaryTreeNode<>(isUnique ? n : r.nextInt(Integer.MAX_VALUE)));
         l.add(it.getLeft());

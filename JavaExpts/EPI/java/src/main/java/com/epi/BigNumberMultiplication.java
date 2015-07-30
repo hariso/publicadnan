@@ -70,7 +70,8 @@ public class BigNumberMultiplication {
     assert (multiply(Arrays.asList(0), Arrays.asList(1, 0, 0, 0))
                 .equals(Arrays.asList(0)));
     assert (
-        multiply(Arrays.asList(9), Arrays.asList(9)).equals(Arrays.asList(8, 1)));
+        multiply(Arrays.asList(9), Arrays.asList(9))
+            .equals(Arrays.asList(8, 1)));
     assert (multiply(Arrays.asList(9), Arrays.asList(9, 9, 9, 9))
                 .equals(Arrays.asList(8, 9, 9, 9, 1)));
     assert (multiply(Arrays.asList(1, 3, 1, 4, 1, 2),

@@ -82,7 +82,8 @@ class PointsCoveringIntervalsAlternative {
     return findMinimumVisitsHelper(endpoints);
   }
 
-  private static List<Integer> findMinimumVisitsHelper(List<EndPoint> endpoints) {
+  private static List<Integer> findMinimumVisitsHelper(
+      List<EndPoint> endpoints) {
     List<Integer> S = new ArrayList<>(); // A minimum set of visit times.
     Set<Interval> covered = new HashSet<>();
     List<Interval> covering = new ArrayList<>();

@@ -39,7 +39,8 @@ public class ViewSunset {
       while (true) {
         buildingHeight = (Integer) osin.readObject();
         while (!buildingsWithSunset.isEmpty() &&
-               (buildingHeight.compareTo(buildingsWithSunset.getLast().height) >=
+               (buildingHeight.compareTo(buildingsWithSunset.getLast().height)
+                >=
                 0)) {
           buildingsWithSunset.removeLast();
         }

@@ -28,7 +28,8 @@ public class MatrixRotationConstant {
     }
   }
 
-  private static void checkAnswer(List<List<Integer>> A, List<List<Integer>> B) {
+  private static void checkAnswer(List<List<Integer>> A,
+                                  List<List<Integer>> B) {
     RotatedMatrix rA = new RotatedMatrix(A);
     for (int i = 0; i < A.size(); ++i) {
       for (int j = 0; j < A.size(); ++j) {

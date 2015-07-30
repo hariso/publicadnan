@@ -38,7 +38,8 @@ public class SquareRoot {
     // Uses normalization for precision problem.
     double diff = (a - b) / b;
     return diff < -EPSILON ? Ordering.SMALLER
-                           : (diff > EPSILON ? Ordering.LARGER : Ordering.EQUAL);
+                           : (diff > EPSILON ? Ordering.LARGER
+                                             : Ordering.EQUAL);
   }
   // @exclude
 

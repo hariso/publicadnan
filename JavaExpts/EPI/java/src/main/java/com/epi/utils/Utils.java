@@ -74,8 +74,8 @@ public class Utils {
   }
 
   /**
-   * Fills the range [from, to) with sequentially increasing values, starting with value and
-   * repetitively evaluating ++value.
+   * Fills the range [from, to) with sequentially increasing values, starting
+   * with value and repetitively evaluating ++value.
    */
   public static void iota(int[] array, int from, int to, int value) {
     for (int i = from; i < to; ++i) {
@@ -84,8 +84,8 @@ public class Utils {
   }
 
   /**
-   * Fills the list with sequentially increasing values, starting with value and repetitively
-   * evaluating ++value.
+   * Fills the list with sequentially increasing values, starting with value and
+   * repetitively evaluating ++value.
    */
   public static void iota(List<Integer> list, int numOfElements, int value) {
     for (int i = 1; i <= numOfElements; ++i) {
@@ -94,8 +94,8 @@ public class Utils {
   }
 
   /**
-   * Fills the list with sequentially increasing values, starting with value and repetitively
-   * evaluating ++value.
+   * Fills the list with sequentially increasing values, starting with value and
+   * repetitively evaluating ++value.
    */
   public static void iota(List<Double> list, int numOfElements, double value) {
     for (int i = 1; i <= numOfElements; ++i) {

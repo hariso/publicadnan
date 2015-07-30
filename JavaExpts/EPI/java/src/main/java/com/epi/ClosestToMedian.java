@@ -13,7 +13,8 @@ import java.util.TreeSet;
 public class ClosestToMedian {
 
   // @include
-  public static ArrayList<Integer> findKClosestToMedian(ArrayList<Integer> A, int k) {
+  public static ArrayList<Integer> findKClosestToMedian(ArrayList<Integer> A,
+                                                        int k) {
     final double median = findMedian(A);
 
     // We will use this custom comparator to reorder the array
@@ -53,7 +54,8 @@ public class ClosestToMedian {
   }
   // @exclude
 
-  private static void checkAns(ArrayList<Integer> A, ArrayList<Integer> res, int k) {
+  private static void checkAns(ArrayList<Integer> A, ArrayList<Integer> res,
+                               int k) {
     Collections.sort(A);
     double median = ((A.size() & 1) != 0)
                     ? A.get(A.size() / 2)

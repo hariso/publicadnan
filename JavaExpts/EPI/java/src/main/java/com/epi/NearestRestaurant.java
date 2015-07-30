@@ -27,7 +27,8 @@ public class NearestRestaurant {
 
   // @include
   public static List<BinaryTree<Integer>> rangeQueryOnBST(BinaryTree<Integer> n,
-                                                          Integer L, Integer U) {
+                                                          Integer L,
+                                                          Integer U) {
     List<BinaryTree<Integer>> res = new ArrayList<>();
     for (BinaryTree<Integer> it = findFirstLargerEqualK(n, L);
          it != null && it.getData().compareTo(U) <= 0;
@@ -37,8 +38,9 @@ public class NearestRestaurant {
     return res;
   }
 
-  private static BinaryTree<Integer> findFirstLargerEqualK(BinaryTree<Integer> r,
-                                                           Integer k) {
+  private static BinaryTree<Integer> findFirstLargerEqualK(
+      BinaryTree<Integer> r,
+      Integer k) {
     if (r == null) {
       return null;
     } else if (r.getData().compareTo(k) < 0) {

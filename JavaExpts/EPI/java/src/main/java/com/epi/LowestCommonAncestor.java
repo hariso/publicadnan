@@ -60,7 +60,8 @@ public class LowestCommonAncestor {
         LCA(root.getRight().getLeft(), root.getRight().getRight()).getData());
     // should output 3
     assert (LCA(root.getLeft(), root.getRight().getLeft()).getData().equals(3));
-    System.out.println(LCA(root.getLeft(), root.getRight().getLeft()).getData());
+    System.out
+        .println(LCA(root.getLeft(), root.getRight().getLeft()).getData());
     // should output 2
     assert (LCA(root.getLeft(), root.getLeft().getLeft()).getData().equals(2));
     System.out.println(LCA(root.getLeft(), root.getLeft().getLeft()).getData());

@@ -26,7 +26,8 @@ public class TowerHanoi {
 
   private static void computeTowerHanoiSteps(int numRingsToMove,
                                              List<Stack<Integer>> pegs,
-                                             int fromPeg, int toPeg, int usePeg) {
+                                             int fromPeg, int toPeg,
+                                             int usePeg) {
     if (numRingsToMove > 0) {
       computeTowerHanoiSteps(numRingsToMove - 1, pegs, fromPeg, usePeg, toPeg);
       pegs.get(toPeg).push(pegs.get(fromPeg).pop());

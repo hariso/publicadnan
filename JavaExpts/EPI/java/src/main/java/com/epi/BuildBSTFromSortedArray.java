@@ -20,7 +20,8 @@ public class BuildBSTFromSortedArray {
     int mid = start + ((end - start) / 2);
     return new BSTNode<>(A[mid],
                          buildMinHeightBSTFromSortedArrayHelper(A, start, mid),
-                         buildMinHeightBSTFromSortedArrayHelper(A, mid + 1, end));
+                         buildMinHeightBSTFromSortedArrayHelper(A, mid + 1,
+                                                                end));
   }
   // @exclude
 
@@ -35,7 +36,9 @@ public class BuildBSTFromSortedArray {
   }
 
   private static void SimpleTest() {
-    BSTNode<Integer> result = buildMinHeightBSTFromSortedArray(new int[]{1, 2, 3, 4});
+    BSTNode<Integer>
+        result =
+        buildMinHeightBSTFromSortedArray(new int[]{1, 2, 3, 4});
     assert (3 == result.getData());
     assert (2 == result.getLeft().getData());
     assert (1 == result.getLeft().getLeft().getData());

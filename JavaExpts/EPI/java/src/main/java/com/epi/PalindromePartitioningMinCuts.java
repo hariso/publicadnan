@@ -39,7 +39,8 @@ public class PalindromePartitioningMinCuts {
     assert (1 == minCuts("aab"));
     assert (0 == minCuts("bb"));
     assert (3 == minCuts("cabababcbc"));
-    assert (42 == minCuts("eegiicgaeadbcfacfhifdbiehbgejcaeggcgbahfcajfhjjdgj"));
+    assert (42 == minCuts(
+        "eegiicgaeadbcfacfhifdbiehbgejcaeggcgbahfcajfhjjdgj"));
   }
 
   public static void main(String[] args) {

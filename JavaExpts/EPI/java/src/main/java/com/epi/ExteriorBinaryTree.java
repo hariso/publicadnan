@@ -58,7 +58,8 @@ public class ExteriorBinaryTree {
   }
   // @exclude
 
-  private static List<Integer> createOutputList(List<BinaryTreeNode<Integer>> L) {
+  private static List<Integer> createOutputList(
+      List<BinaryTreeNode<Integer>> L) {
     List<Integer> result = new ArrayList<Integer>();
     for (BinaryTreeNode<Integer> l : L) {
       result.add(l.getData());

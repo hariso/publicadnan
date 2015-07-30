@@ -24,7 +24,8 @@ public class JustifyText {
         currLineLength = 0;
       } else if (lookaheadLineLength > L) {
         result.add(
-            joinALineWithSpace(words, currLineStart, i - 1, L - currLineLength));
+            joinALineWithSpace(words, currLineStart, i - 1,
+                               L - currLineLength));
         currLineStart = i;
         numWordsCurrLine = 1;
         currLineLength = words[i].length();
@@ -86,7 +87,8 @@ public class JustifyText {
     testCase(words, L, golden);
     words = new String[]{"Listen", "to", "many,", "speak", "to", "a", "few."};
     golden =
-        new String[]{"Listen", "to    ", "many, ", "speak ", "to   a", "few.  "};
+        new String[]{"Listen", "to    ", "many, ", "speak ", "to   a",
+                     "few.  "};
     L = 6;
     System.out.println("L = " + L);
     testCase(words, L, golden);
@@ -98,7 +100,8 @@ public class JustifyText {
     System.out.println("L = " + L);
     testCase(words, L, golden);
     golden =
-        new String[]{"The  quick brown", "fox  jumped over", "the lazy dogs.  "};
+        new String[]{"The  quick brown", "fox  jumped over",
+                     "the lazy dogs.  "};
     L = 16;
     System.out.println("L = " + L);
     testCase(words, L, golden);

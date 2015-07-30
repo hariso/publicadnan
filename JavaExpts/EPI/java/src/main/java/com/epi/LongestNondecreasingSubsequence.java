@@ -24,7 +24,8 @@ public class LongestNondecreasingSubsequence {
       System.out.println(A);
       System.out.println("n = " + n);
       int retLength =
-          LongestNondecreasingSubsequenceNlogn.longestNondecreasingSubsequence(A);
+          LongestNondecreasingSubsequenceNlogn
+              .longestNondecreasingSubsequence(A);
       System.out.println("retLength = " + retLength);
       List<Integer> output =
           LongestNondecreasingSubsequenceN2.longestNondecreasingSubsequence(A);

@@ -20,7 +20,8 @@ import java.util.Random;
 public class AverageTop3Scores {
 
   // @include
-  public static String findStudentWithHighestBestOfThreeScores(ObjectInputStream ois) {
+  public static String findStudentWithHighestBestOfThreeScores(
+      ObjectInputStream ois) {
     Map<String, PriorityQueue<Integer>> studentScores = new HashMap<>();
     try {
       while (true) {

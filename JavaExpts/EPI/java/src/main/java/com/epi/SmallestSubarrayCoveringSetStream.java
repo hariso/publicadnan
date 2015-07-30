@@ -20,7 +20,8 @@ public class SmallestSubarrayCoveringSetStream {
     }
   }
 
-  private static Integer getValueForFirstEntry(LinkedHashMap<String, Integer> m) {
+  private static Integer getValueForFirstEntry(
+      LinkedHashMap<String, Integer> m) {
     // LinkedHashMap guarantees iteration over key-value pairs takes place 
     // in insertion order, most recent first.
     Integer result = null;

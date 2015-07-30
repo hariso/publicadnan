@@ -30,13 +30,15 @@ public class MultibetCardColorGame {
       double best = Double.MIN_VALUE;
       for (int bet = 0; bet <= cash; ++bet) {
         double redLowerBound =
-            min(computeBestPayoffHelper(cache, upperBound, cash + bet, numRed - 1,
+            min(computeBestPayoffHelper(cache, upperBound, cash + bet,
+                                        numRed - 1,
                                         numCards - 1),
                 computeBestPayoffHelper(cache, upperBound, cash - bet, numRed,
                                         numCards - 1));
 
         double blackLowerBound =
-            min(computeBestPayoffHelper(cache, upperBound, cash - bet, numRed - 1,
+            min(computeBestPayoffHelper(cache, upperBound, cash - bet,
+                                        numRed - 1,
                                         numCards - 1),
                 computeBestPayoffHelper(cache, upperBound, cash + bet, numRed,
                                         numCards - 1));

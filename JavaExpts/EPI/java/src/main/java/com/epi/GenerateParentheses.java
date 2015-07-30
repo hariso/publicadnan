@@ -23,7 +23,8 @@ public class GenerateParentheses {
 
     if (numLeftParensNeeded > 0) { // Able to insert '('.
       directedGenerateBalancedParentheses(numLeftParensNeeded - 1,
-                                          numRightParensNeeded, validPrefix + "(",
+                                          numRightParensNeeded,
+                                          validPrefix + "(",
                                           result);
     }
     if (numLeftParensNeeded < numRightParensNeeded) { // Able to insert ')'.

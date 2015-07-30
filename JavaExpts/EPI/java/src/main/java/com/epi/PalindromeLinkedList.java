@@ -48,7 +48,9 @@ class PalindromeLinkedList {
     if (args.length > 1) {
       // Input the node's value in reverse order.
       for (String element : args) {
-        ListNode<Integer> curr = new ListNode<>(Integer.parseInt(element), head);
+        ListNode<Integer>
+            curr =
+            new ListNode<>(Integer.parseInt(element), head);
         head = curr;
       }
       System.out.println(((isLinkedListAPalindrome(head)) ? "Yes" : "No"));

@@ -28,7 +28,8 @@ public class HuffmanEncoding {
     public Symbol s;
     public BinaryTree left, right;
 
-    public BinaryTree(double prob, Symbol s, BinaryTree left, BinaryTree right) {
+    public BinaryTree(double prob, Symbol s, BinaryTree left,
+                      BinaryTree right) {
       this.prob = prob;
       this.s = s;
       this.left = left;

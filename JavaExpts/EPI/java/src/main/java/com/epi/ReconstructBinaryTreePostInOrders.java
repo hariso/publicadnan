@@ -36,7 +36,8 @@ public class ReconstructBinaryTreePostInOrders {
     return new BinaryTreeNode<>(
         post[postE - 1],
         // Recursively build the left subtree.
-        reconstructPostInOrdersHelper(post, postS, postS + leftTreeSize, inS, idx,
+        reconstructPostInOrdersHelper(post, postS, postS + leftTreeSize, inS,
+                                      idx,
                                       inEntryIdxMap),
         // Recursively build the right subtree.
         reconstructPostInOrdersHelper(post, postS + leftTreeSize, postE - 1,

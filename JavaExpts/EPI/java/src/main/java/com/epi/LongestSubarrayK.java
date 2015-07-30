@@ -36,7 +36,8 @@ public class LongestSubarrayK {
     List<Integer> minPrefixSum = new ArrayList<>(prefixSum);
 
     for (int i = minPrefixSum.size() - 2; i >= 0; --i) {
-      minPrefixSum.set(i, Math.min(minPrefixSum.get(i), minPrefixSum.get(i + 1)));
+      minPrefixSum
+          .set(i, Math.min(minPrefixSum.get(i), minPrefixSum.get(i + 1)));
     }
 
     Subarray arrIdx = new Subarray(0, firstGreaterThanKey(minPrefixSum, k) - 1);

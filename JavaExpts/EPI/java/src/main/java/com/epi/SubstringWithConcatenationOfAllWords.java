@@ -24,7 +24,8 @@ public class SubstringWithConcatenationOfAllWords {
     return result;
   }
 
-  private static boolean matchAllWordsInDict(String s, Map<String, Integer> dict,
+  private static boolean matchAllWordsInDict(String s,
+                                             Map<String, Integer> dict,
                                              int start, int numWords,
                                              int unitSize) {
     Map<String, Integer> currDict = new HashMap<>();

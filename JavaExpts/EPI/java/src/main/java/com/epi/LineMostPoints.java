@@ -146,7 +146,8 @@ public class LineMostPoints {
                              public int compare(Map.Entry<Line, Set<Point>> e1,
                                                 Map.Entry<Line, Set<Point>> e2) {
                                if (e1 != null && e2 != null) {
-                                 return Integer.compare(e1.getValue().size(), e2.getValue().size());
+                                 return Integer.compare(e1.getValue().size(),
+                                                        e2.getValue().size());
                                } else if (e1 != null) {
                                  return 1;
                                } else {
@@ -185,9 +186,10 @@ public class LineMostPoints {
        * System.out.println(points.get(i).x + ", " + points.get(i).y); }
        */
       Line l = findLineWithMostPoints(points);
-      System.out.println(l.getSlope().numerator + " " + l.getSlope().denominator +
-                         " " + l.getIntercept().numerator + " " +
-                         l.getIntercept().denominator);
+      System.out
+          .println(l.getSlope().numerator + " " + l.getSlope().denominator +
+                   " " + l.getIntercept().numerator + " " +
+                   l.getIntercept().denominator);
     }
   }
 }

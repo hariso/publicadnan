@@ -58,7 +58,9 @@ public class HighestAffinityPairs {
     List<String> keys = new ArrayList<>(pageUsersMap.keySet());
     for (int i = 0; i < keys.size(); i++) {
       for (int j = i + 1; j < keys.size(); ++j) {
-        Set<String> intersectUsers = new HashSet<>(pageUsersMap.get(keys.get(i)));
+        Set<String>
+            intersectUsers =
+            new HashSet<>(pageUsersMap.get(keys.get(i)));
         intersectUsers.retainAll(pageUsersMap.get(keys.get(j)));
 
         // Updates result if we find larger intersection.
@@ -82,9 +84,12 @@ public class HighestAffinityPairs {
   }
 
   private static void SimpleTest() {
-    ObjectInputStream ois = objectInputStreamFromList(Arrays.asList("a", "A", "b", "B", "c", "A"));
+    ObjectInputStream
+        ois =
+        objectInputStreamFromList(Arrays.asList("a", "A", "b", "B", "c", "A"));
     PagePair result = highestAffinityPair(ois);
-    System.out.println("result.pageA, pageB" + result.pageA + " " + result.pageB);
+    System.out
+        .println("result.pageA, pageB" + result.pageA + " " + result.pageB);
     assert (result.pageA.equals("a") && result.pageB.equals("c")
             || result.pageA.equals("c") && result.pageB.equals("a"));
   }

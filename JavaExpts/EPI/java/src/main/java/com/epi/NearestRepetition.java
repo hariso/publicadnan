@@ -23,7 +23,8 @@ class NearestRepetition {
     for (int i = 0; i < paragraph.length; ++i) {
       if (wordToLatestIndex.containsKey(paragraph[i])) {
         nearestRepeatedDistance =
-            Math.min(nearestRepeatedDistance, i - wordToLatestIndex.get(paragraph[i]));
+            Math.min(nearestRepeatedDistance,
+                     i - wordToLatestIndex.get(paragraph[i]));
       }
       wordToLatestIndex.put(paragraph[i], i);
     }
@@ -46,7 +47,8 @@ class NearestRepetition {
 
   public static void main(String[] args) {
     String[] A =
-        new String[]{"foo", "bar", "widget", "foo", "widget", "widget", "adnan"};
+        new String[]{"foo", "bar", "widget", "foo", "widget", "widget",
+                     "adnan"};
     assert (checkAnswer(A) == findNearestRepetition(A));
     A = new String[]{"foo", "bar", "widget", "foo",
                      "xyz", "widget", "bar", "adnan"};

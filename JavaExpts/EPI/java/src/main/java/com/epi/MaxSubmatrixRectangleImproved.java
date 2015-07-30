@@ -19,7 +19,8 @@ public class MaxSubmatrixRectangleImproved {
         table[j] = A.get(i).get(j) ? i + 1 < A.size() ? table[j] + 1 : 1 : 0;
       }
       maxRectArea =
-          Math.max(maxRectArea, calculateLargestRectangle(Arrays.asList(table)));
+          Math.max(maxRectArea,
+                   calculateLargestRectangle(Arrays.asList(table)));
     }
     return maxRectArea;
   }

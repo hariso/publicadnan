@@ -61,7 +61,8 @@ public class GaussianPrimes {
         return true;
       }
       Complex that = (Complex) obj;
-      return this.getReal() == that.getReal() && this.getImag() == that.getImag();
+      return this.getReal() == that.getReal() && this.getImag() == that
+          .getImag();
     }
 
     @Override
@@ -95,7 +96,8 @@ public class GaussianPrimes {
       Complex p = candidates.pollFirst();
       primes.add(p);
       int maxMultiplier =
-          (int) Math.ceil(Math.sqrt(2.0) * n / Math.floor(Math.sqrt(p.getNorm())));
+          (int) Math
+              .ceil(Math.sqrt(2.0) * n / Math.floor(Math.sqrt(p.getNorm())));
 
       // Any Gaussian integer outside the range we're iterating
       // over below has a modulus greater than maxMultiplier.

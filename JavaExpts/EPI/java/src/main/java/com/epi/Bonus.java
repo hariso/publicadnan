@@ -37,16 +37,18 @@ public class Bonus {
   public static int[] calculateBonus(int[] productivity) {
     // Stores (index, productivity)-pair in minHeap where ordered by
     // productivity.
-    TreeSet<EmployeeData> minHeap = new TreeSet<>(new Comparator<EmployeeData>() {
-      @Override
-      public int compare(EmployeeData o1, EmployeeData o2) {
-        int result = o1.productivity.compareTo(o2.productivity);
-        if (result == 0) {
-          result = o1.index.compareTo(o2.index);
-        }
-        return result;
-      }
-    });
+    TreeSet<EmployeeData>
+        minHeap =
+        new TreeSet<>(new Comparator<EmployeeData>() {
+          @Override
+          public int compare(EmployeeData o1, EmployeeData o2) {
+            int result = o1.productivity.compareTo(o2.productivity);
+            if (result == 0) {
+              result = o1.index.compareTo(o2.index);
+            }
+            return result;
+          }
+        });
     for (int i = 0; i < productivity.length; ++i) {
       minHeap.add(new EmployeeData(productivity[i], i));
     }
@@ -67,7 +69,8 @@ public class Bonus {
       // Handles the right neighbor.
       if (nextDev + 1 < tickets.length) {
         if (productivity[nextDev] > productivity[nextDev + 1]) {
-          tickets[nextDev] = Math.max(tickets[nextDev], tickets[nextDev + 1] + 1);
+          tickets[nextDev] =
+              Math.max(tickets[nextDev], tickets[nextDev + 1] + 1);
         }
       }
       minHeap.remove(p);

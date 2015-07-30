@@ -13,7 +13,8 @@ public class ReconstructPreorderWithNull {
   // @include
   private static Integer idx;
 
-  public static BinaryTreeNode<Integer> reconstructPreorder(Integer[] preorder) {
+  public static BinaryTreeNode<Integer> reconstructPreorder(
+      Integer[] preorder) {
     idx = 0;
     return reconstructPreorderHelper(preorder);
   }

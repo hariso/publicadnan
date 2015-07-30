@@ -60,7 +60,9 @@ class EvenOddMergeLinkedList {
     int n = 0;
     if (args.length > 1) {
       for (String element : args) {
-        ListNode<Integer> curr = new ListNode<>(Integer.parseInt(element), null);
+        ListNode<Integer>
+            curr =
+            new ListNode<>(Integer.parseInt(element), null);
         curr.next = head;
         head = curr;
       }

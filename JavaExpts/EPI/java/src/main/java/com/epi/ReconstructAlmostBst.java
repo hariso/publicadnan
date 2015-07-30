@@ -16,7 +16,8 @@ public class ReconstructAlmostBst {
     public BinaryTreeNode<Integer> prev;
     public BinaryTreeNode<Integer> curr;
 
-    public Inversion(BinaryTreeNode<Integer> prev, BinaryTreeNode<Integer> curr) {
+    public Inversion(BinaryTreeNode<Integer> prev,
+                     BinaryTreeNode<Integer> curr) {
       this.prev = prev;
       this.curr = curr;
     }

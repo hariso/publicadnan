@@ -113,7 +113,8 @@ public class TeamPhoto2 {
     return maxDistance;
   }
 
-  private static void DFS(GraphVertex cur, LinkedList<GraphVertex> vertexOrder) {
+  private static void DFS(GraphVertex cur,
+                          LinkedList<GraphVertex> vertexOrder) {
     cur.visited = true;
     for (GraphVertex next : cur.edges) {
       if (!next.visited) {

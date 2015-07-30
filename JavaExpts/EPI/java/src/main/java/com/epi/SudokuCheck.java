@@ -28,7 +28,8 @@ public class SudokuCheck {
     int regionSize = (int) Math.sqrt(partialAssignment.size());
     for (int I = 0; I < regionSize; ++I) {
       for (int J = 0; J < regionSize; ++J) {
-        if (hasDuplicate(partialAssignment, regionSize * I, regionSize * (I + 1),
+        if (hasDuplicate(partialAssignment, regionSize * I,
+                         regionSize * (I + 1),
                          regionSize * J, regionSize * (J + 1))) {
           return false;
         }

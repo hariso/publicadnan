@@ -33,7 +33,8 @@ public class QueueWithMax {
       if (!q1.isEmpty()) {
         return q2.isEmpty() ? Collections.max(q1)
                             : Collections.max(Arrays.asList(Collections.max(q1),
-                                                            Collections.max(q2)));
+                                                            Collections
+                                                                .max(q2)));
       } else { // q1.empty() == true.
         if (!q2.isEmpty()) {
           return Collections.max(q2);

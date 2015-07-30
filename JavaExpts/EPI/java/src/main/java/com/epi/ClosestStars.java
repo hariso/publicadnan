@@ -155,7 +155,8 @@ public class ClosestStars {
       closestStars = findClosestKStars(k, ois);
       Collections.sort(closestStars);
       Collections.sort(stars);
-      assert (stars.get(k - 1).equals(closestStars.get(closestStars.size() - 1)));
+      assert (stars.get(k - 1)
+                  .equals(closestStars.get(closestStars.size() - 1)));
     }
   }
 }

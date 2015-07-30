@@ -54,7 +54,8 @@ public class OrderStatistic {
   }
 
   // @include
-  public static int findKth(ArrayList<Integer> A, int k, Comparator<Integer> cmp) {
+  public static int findKth(ArrayList<Integer> A, int k,
+                            Comparator<Integer> cmp) {
     int left = 0, right = A.size() - 1;
     Random r = new Random(0);
     while (left <= right) {
@@ -75,9 +76,10 @@ public class OrderStatistic {
   }
 
   /**
-   * Partitions {@code A[left : right]} around {@code pivotIdx}, returns the new index of the pivot,
-   * {@code newPivotIdx}, after partition. After partitioning, {@code A[left : newPivotIdx - 1]}
-   * contains elements that are less than the pivot, and {@code A[newPivotIdx + 1 : right]} contains
+   * Partitions {@code A[left : right]} around {@code pivotIdx}, returns the new
+   * index of the pivot, {@code newPivotIdx}, after partition. After
+   * partitioning, {@code A[left : newPivotIdx - 1]} contains elements that are
+   * less than the pivot, and {@code A[newPivotIdx + 1 : right]} contains
    * elements that are greater than the pivot.
    *
    * <b>Note:</b> "Greater than" is defined by the comparator object.
@@ -85,7 +87,8 @@ public class OrderStatistic {
    * @return new index of the pivot after partition
    */
   private static int partitionAroundPivot(int left, int right, int pivotIdx,
-                                          ArrayList<Integer> A, Comparator<Integer> cmp) {
+                                          ArrayList<Integer> A,
+                                          Comparator<Integer> cmp) {
     int pivotValue = A.get(pivotIdx);
     int newPivotIdx = left;
 
@@ -276,7 +279,8 @@ public class OrderStatistic {
     }
   }
 
-  private static void checkOrderStatistic(ArrayList<Integer> A, int K, boolean increasingOrder) {
+  private static void checkOrderStatistic(ArrayList<Integer> A, int K,
+                                          boolean increasingOrder) {
     ArrayList<Integer> B = new ArrayList<>(A);
     if (increasingOrder) {
       findKthSmallest(A, K);

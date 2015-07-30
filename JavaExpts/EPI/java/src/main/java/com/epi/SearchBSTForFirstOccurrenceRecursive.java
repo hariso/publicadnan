@@ -14,8 +14,9 @@ public class SearchBSTForFirstOccurrenceRecursive {
       return node != null ? node : tree;
     }
     // Search the left or right subtree based on relative values of tree.getData() and k.
-    return findFirstEqualK(tree.getData() < k ? tree.getRight() : tree.getLeft(),
-                           k);
+    return findFirstEqualK(
+        tree.getData() < k ? tree.getRight() : tree.getLeft(),
+        k);
   }
   // @exclude
 
